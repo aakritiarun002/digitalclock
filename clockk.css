@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Teko:regular);
+* , *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Teko", sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: radial-gradient(#121212, #000000);
+    color: #0c0a0add;
+    line-height: 3em;
+}
+
+.clock-box {
+    padding: 3em 1.5em;
+    background-image: linear-gradient(45deg, #fe019a , #fe019a);
+    border-radius: 20% 20% 20% 20% / 20% 20% 20% 20%;
+    animation: bgblob 4s infinite 0.5s;
+}
+
+.clock {
+    font-size: 4.5em;
+}
+
+.date {
+    font-size: 2em;
+}
+
+.clock, 
+.date {
+    text-shadow: 0 5px 5px #410427c2;
+}
+
+@keyframes bgblab {
+    0% {
+        border-radius: 20% 20% 20% 20% / 20% 20% 20% 20%;
+    }
+    25%
+    {
+        border-radius: 20% 20% 20% 20% / 20% 20% 20% 20%;
+    }
+    50%{
+        border-radius: 20% 20% 20% 20% / 20% 20% 20% 20%;
+    }
+    75% {
+        border-radius: 20% 20% 20% 20% / 20% 20% 20% 20%;
+    }
+    100% {
+        border-radius:  20% 20% 20% 20% / 20% 20% 20% 20%;
+    }
+}
